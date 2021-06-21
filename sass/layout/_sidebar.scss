@@ -1,0 +1,10 @@
+.sidebar {
+  margin-left: 20px;
+  width: 150px;
+  height: 100vh;
+  background-color: $sidebar-background;
+
+  .ul {
+    list-style: none;
+  }
+}
