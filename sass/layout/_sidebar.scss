@@ -1,10 +1,44 @@
 .sidebar {
-  margin-left: 20px;
   width: 150px;
   height: 100vh;
   background-color: $sidebar-background;
+}
 
-  .ul {
-    list-style: none;
-  }
+.drop-button {
+  background-color: $sidebar-background;
+  color: $font-color;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $sidebar-background;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: $font-color;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .drop-button {
+  background-color: $sidebar-background;
 }
