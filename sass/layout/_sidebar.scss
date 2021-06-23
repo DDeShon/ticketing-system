@@ -6,7 +6,7 @@
 }
 
 .new-ticket {
-  margin-left: 5px;
+  margin-left: 25px;
   background-color: $ticket-button-color;
   color: $nav-font-color;
   font-size: 1.2rem;
@@ -19,11 +19,12 @@
     transform: scale(1.1);
   }
 }
+
 .drop-button {
   background-color: $sidebar-background;
   color: $font-color;
   border: none;
-  padding: 0.4rem;
+  padding: 1.7rem;
   font-size: 1.4rem;
 }
 
@@ -39,7 +40,7 @@
   min-width: 160px;
   box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.8);
   z-index: 1;
-  margin-left: 4rem;
+  margin-left: 6rem;
   line-height: 1rem;
   top: 4rem;
 
