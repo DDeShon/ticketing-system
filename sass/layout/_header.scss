@@ -2,13 +2,19 @@
   height: 60px;
   width: 100%;
   background-color: white;
+  align-items: center;
+  display: flex;
 
   .logo {
     padding: 4px 0 0 45px;
+    width: fit-content;
 
     img {
       width: 50px;
     }
+  }
+
+  .search {
   }
 
   .topnav-right {
