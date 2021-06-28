@@ -53,7 +53,8 @@
   }
 
   a:hover {
-    background-color: white;
+    background-color: $ticket-button-color;
+    color: $nav-font-color;
     border-radius: 10px;
   }
 }
