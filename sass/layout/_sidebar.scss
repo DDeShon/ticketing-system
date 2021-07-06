@@ -1,69 +1,68 @@
 .sidebar {
-  // width: 200px;
   height: 100vh;
+  max-width: 200px;
   background-color: $sidebar-background;
   line-height: 6rem;
-  flex: 20%;
-}
 
-.new-ticket {
-  margin-left: 25px;
-  background-color: $ticket-button-color;
-  color: $nav-font-color;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  cursor: pointer;
+  .new-ticket {
+    margin-left: 25px;
+    background-color: $ticket-button-color;
+    color: $nav-font-color;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
 
-  &:hover {
-    font-weight: bold;
-    transform: scale(1.1);
+    &:hover {
+      font-weight: bold;
+      transform: scale(1.1);
+    }
   }
-}
 
-.drop-button {
-  background-color: $sidebar-background;
-  color: $font-color;
-  border: none;
-  padding: 1.7rem;
-  font-size: 1.4rem;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.drop-content {
-  display: none;
-  position: absolute;
-  background-color: $dropdown-background;
-  min-width: 160px;
-  box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  margin-left: 6rem;
-  line-height: 1rem;
-  top: 4rem;
-  border-radius: 10px;
-
-  a {
+  .drop-button {
+    background-color: $sidebar-background;
     color: $font-color;
-    padding: 12px 16px;
-    text-decoration: none;
+    border: none;
+    padding: 1.7rem;
+    font-size: 1.4rem;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .drop-content {
+    display: none;
+    position: absolute;
+    background-color: $dropdown-background;
+    min-width: 160px;
+    box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    margin-left: 6rem;
+    line-height: 1rem;
+    top: 4rem;
+    border-radius: 10px;
+
+    a {
+      color: $font-color;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    a:hover {
+      background-color: $ticket-button-color;
+      color: $nav-font-color;
+      border-radius: 10px;
+    }
+  }
+
+  .dropdown:hover .drop-content {
     display: block;
   }
 
-  a:hover {
-    background-color: $ticket-button-color;
-    color: $nav-font-color;
-    border-radius: 10px;
+  .dropdown:hover .drop-button {
+    background-color: $sidebar-background;
   }
-}
-
-.dropdown:hover .drop-content {
-  display: block;
-}
-
-.dropdown:hover .drop-button {
-  background-color: $sidebar-background;
 }
