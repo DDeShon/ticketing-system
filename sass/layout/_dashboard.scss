@@ -1,8 +1,6 @@
 .dashboard {
-  display: flexbox;
   background-color: $main-background;
-  height: 100%;
-  width: 80%;
-  margin-left: 200px;
+  height: 100vh;
   padding: 10px;
+  flex: 80%;
 }
